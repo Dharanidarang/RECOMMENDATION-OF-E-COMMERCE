@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Exclusive</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Exclusive</div>
+        <nav>
+        
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="What are you looking for?">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="#"></a> / <span>Cart</span>
+    </div>
+
+    <div class="cart-container">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="lcd_monitor.jpg" alt="LCD Monitor">
+                        <span>LCD Monitor</span>
+                    </td>
+                    <td>$650</td>
+                    <td>
+                        <select id="quantity1" onchange="updateCart()">
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                        </select>
+                    </td>
+                    <td id="subtotal1">$650</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="gamepad.jpg" alt="Hi Gamepad">
+                        <span>Hi Gamepad</span>
+                    </td>
+                    <td>$550</td>
+                    <td>
+                        <select id="quantity2" onchange="updateCart()">
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                        </select>
+                    </td>
+                    <td id="subtotal2">$1100</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-actions">
+            <button onclick="location.href='#'">Return To Shop</button>
+            <button onclick="updateCart()">Update Cart</button>
+        </div>
+        
+        <div class="coupon-section">
+            <input type="text" placeholder="Coupon Code">
+            <button>Apply Coupon</button>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Cart Total</h3>
+            <p>Subtotal: <span id="cartSubtotal">$1750</span></p>
+            <p>Shipping: Free</p>
+            <p>Total: <span id="cartTotal">$1750</span></p>
+            <button>Proceed to checkout</button>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.header-container h1 {
+    margin: 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.header-container input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.cart-icons img {
+    width: 20px;
+    margin-left: 15px;
+}
+
+.breadcrumb {
+    margin: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.billing-details,
+.order-details {
+    width: 48%;
+}
+
+.billing-details h2,
+.order-details h2 {
+    margin-bottom: 20px;
+}
+
+.billing-details input,
+.coupon input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.save-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.save-info input {
+    margin-right: 10px;
+}
+
+.order-details .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.order-details .subtotal,
+.order-details .shipping,
+.order-details .total {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.payment-method {
+    margin: 20px 0;
+}
+
+.coupon input {
+    width: 70%;
+}
+
+.coupon button {
+    width: 25%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.place-order {
+    width: 100%;
+    padding: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
